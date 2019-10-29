@@ -4,6 +4,35 @@
 
 body {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+    width: 90%;
+}
+
+table td, table th {
+    border: 3px solid black;
+}
+
+td {
+    height: 100px;
+    font-size: 30px;
+}
+
+.closeDialogButton {
+    font-size: 16px;
+    margin: 30px auto 0;
+    width: 50%;
+    height: 45px;
+}
+
+.mappingButton {
+    display: block;
+    margin: 10px auto 30px;
+    font-size: 16px;
 }
 
 #textToEncode {

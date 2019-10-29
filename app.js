@@ -142,3 +142,12 @@ function addBorder(container, direction) {
     }
     return container;
 }
+
+
+function showMapping() {
+    document.getElementById("mappingDialog").showModal();
+}
+
+function closeDialog() {
+    document.getElementById("mappingDialog").close();
+}

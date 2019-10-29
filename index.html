@@ -5,15 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Treasure Hunter</title>
+    <title>Treasure Text Encoder</title>
 </head>
 <body>
-    <h1>Treasure Code Encoder</h1>
+    <h1>Treasure Text Encoder</h1>
 
-    <label for="textToEncode">Enter the text to encode:</label>
+    <!-- A button that shows the mapping -->
+    <button class="mappingButton" onclick="showMapping()">Show the mapping</button>
+
+    <label for="textToEncode">Enter a text to encode:</label>
     <input type="text" id="textToEncode">
     <button onclick="startEncding()">Encode</button>
     <div class="container"></div>
+
+    <dialog id="mappingDialog">
+        <h1>How to read the encoded symbols</h1>
+        <table>
+            <tr><td>ABC</td><td>DEF</td><td>GHI</td></tr>
+            <tr><td>JKL</td><td>MNO</td><td>PQR</td></tr>
+            <tr><td>STU</td><td>VWX</td><td>YZ</td></tr>
+        </table>
+
+        <button class="closeDialogButton" onclick="closeDialog()">Close</button>
+    </dialog>
     <script src="app.js"></script>
 </body>
 </html>
